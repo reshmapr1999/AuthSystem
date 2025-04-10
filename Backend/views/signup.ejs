@@ -1,0 +1,25 @@
+<%- include('partials/header', { title: 'Sign Up' }) %>
+
+<div class="container d-flex justify-content-center">
+  <form action="/signup" method="POST" class="auth-box">
+    <h3 class="mb-4 text-center">Sign Up</h3>
+    <div class="mb-3">
+      <label>Email</label>
+      <input type="email" name="email" class="form-control" required />
+    </div>
+    <div class="mb-3">
+      <label>Password</label>
+      <input type="password" name="password" class="form-control" required />
+    </div>
+    <div class="mb-3">
+      <label>Confirm Password</label>
+      <input type="password" name="confirmPassword" class="form-control" required />
+    </div>
+    <button class="btn btn-primary w-100">Sign Up</button>
+    <div class="mt-3 text-center">
+      Already have an account? <a href="/">Sign in</a>
+    </div>
+  </form>
+</div>
+
+<%- include('partials/footer') %>

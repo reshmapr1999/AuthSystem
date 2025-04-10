@@ -1,0 +1,17 @@
+<%- include('partials/header', { title: 'Forgot Password' }) %>
+
+<div class="container d-flex justify-content-center">
+  <form action="/forgot" method="POST" class="auth-box">
+    <h3 class="mb-4 text-center">Forgot Password</h3>
+    <div class="mb-3">
+      <label>Enter your email</label>
+      <input type="email" name="email" class="form-control" required />
+    </div>
+    <button class="btn btn-warning w-100">Send Reset Link</button>
+    <div class="mt-3 text-center">
+      <a href="/signin">Back to Sign In</a>
+    </div>
+  </form>
+</div>
+
+<%- include('partials/footer') %>
